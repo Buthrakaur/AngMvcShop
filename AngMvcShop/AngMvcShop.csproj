@@ -146,6 +146,13 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <TypeScriptCompile Include="Scripts\Controllers\controllers.ts" />
+    <Content Include="Scripts\Controllers\controllers.js">
+      <DependentUpon>controllers.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\Controllers\controllers.min.js">
+      <DependentUpon>controllers.ts</DependentUpon>
+    </Content>
     <Content Include="Scripts\i18n\angular-locale_am-et.js" />
     <Content Include="Scripts\i18n\angular-locale_am.js" />
     <Content Include="Scripts\i18n\angular-locale_ar-eg.js" />

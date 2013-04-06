@@ -5,6 +5,19 @@
 	Layout = "~/Views/_LayoutPage.cshtml";
 }
 
+@section Scripts
+{
+	<script src="~/Scripts/Controllers/controllers.js"></script>
+}
+
 <h2>@ViewBag.Title</h2>
 
-<p>Nothing here {{'yet' + '!'}}</p>
+<div data-ng-controller="ProductListController">
+  <ul>
+	  <li data-ng-repeat="product in products">
+		  <img ng-src="{{product.ThumbnailUrl}}"/>
+		  {{product.Name}}
+		  <a class="btn" href="#"><i class="icon-shopping-cart"></i> koupit</a>
+	  </li>
+  </ul>	
+</div>
