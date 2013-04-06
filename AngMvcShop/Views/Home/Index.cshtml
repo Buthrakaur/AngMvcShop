@@ -15,7 +15,7 @@
 <div data-ng-controller="ProductListController">
   <ul>
 	  <li data-ng-repeat="product in products">
-		  <img ng-src="{{product.ThumbnailUrl}}"/>
+		  <img data-ng-src="{{product.ThumbnailUrl}}"/>
 		  {{product.Name}}
 		  <a class="btn" href="#"><i class="icon-shopping-cart"></i> koupit</a>
 	  </li>

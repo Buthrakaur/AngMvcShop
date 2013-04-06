@@ -32,3 +32,5 @@ _NCrunch*/
 
 log/
 App_Data/
+/AngMvcShop/obj
+/AngMvcShop/bin
